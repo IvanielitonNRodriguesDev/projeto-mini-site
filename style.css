@@ -1,0 +1,173 @@
+@charset "UTF-8";
+
+:root{
+    --corxgo: #8000f8;
+    --gradient: linear-gradient(36deg, rgba(128,0,248,1) 66%, rgba(244,63,145,1) 100%);
+    --fontexgo: 'SemiBold 600', arial, serif
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: #540c7e;
+    color: white;
+    font-family: var(--fontexgo);
+    font-size: 20px;
+}
+header{
+    height: 100vh;
+    background-image: url(imgs/XGO.png);
+    background-position: center center;
+    background-size: cover;
+    box-shadow: 1px 1px 5px black;
+}
+header nav ul{
+    display: flex;
+    justify-content: center;
+}
+header nav ul li{
+    list-style-type: none;
+    margin: 35px 10px;
+    padding: 10px;
+    background-color: var(--corxgo);
+    border-radius: 3px;
+    transition-duration: 0.5s;
+}
+header nav ul li:hover{
+    transform: scale(1.1);
+}
+header nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+header .logo{
+    text-align: right;
+    margin: 0px 0px 0px 0px;
+    position: relative;
+    height: 500px;
+}
+header .logo .logo-local{
+    position: absolute;
+    left: 70%;
+    top: 50%;
+    transform: translate(-30%, -40%);
+    width: 450px;
+}
+header .logo-local h1{
+    font-size: 40px;
+}
+header .logo-local h1 .x{
+    font-size: 80px;
+    color: var(--corxgo);
+}
+header .logo-local h1 .go{
+    font-size: 80px;
+}
+header .logo-local h1 .web{
+    color: var(--corxgo);
+}
+header .logo-local p{
+    background-color: rgba(255, 255, 255, 0.089);
+    width: 214px;
+    margin-left: 215px;
+    margin-top: 10px;
+    padding: 7px;
+    
+    border-bottom: solid 2px white;
+}
+header .logo-local p span{
+    color: var(--corxgo);
+    font-weight: bold;
+}
+main{
+    width: 1100px;
+    margin: 20px auto;
+    background-color: white;
+    padding: 15px;
+    box-shadow: -3px 4px 8px 0px rgba(0, 0, 0, 0.432);
+}
+main h2{
+    color: white;
+    margin: 0px 0px 10px 0px;
+    background-image: var(--gradient);
+    padding: 10px;
+    border-bottom: solid 4px black;
+}
+main .main-imgs{
+    display: flex;
+    justify-content: center;
+    
+}
+main .main-imgs a{
+    margin: 10px 10px 10px 10px;
+    text-decoration: none;
+    color: var(--corxgo);
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+main .main-imgs a p{
+    margin-top: 5px;
+}
+main .main-imgs a:hover{
+    text-decoration: underline;
+}
+main .main-imgs img{
+    width: 350px;
+    box-shadow: 2px 2px 7px rgb(0 0 0 / 50%);
+}
+main .main-imgs a img{
+    transition-duration: 1s;
+}
+main .main-imgs a img:hover{
+    transform: scale(1.1);
+}
+.art-principal{
+    width: 1100px;
+    margin: 20px auto;
+    background-color: white;
+    border: 0px 0px 0px 0px;
+    padding: 15px;
+    color: black;
+    box-shadow: -3px 4px 8px 0px rgba(0, 0, 0, 0.432);
+}
+.art-principal h2{
+    color: white;
+    margin: 0px 0px 10px 0px;
+    background-image: var(--gradient);
+    padding: 10px;
+    border-bottom: solid 4px black;
+}
+footer{
+    background-color: black;
+    box-shadow: 0px -7px 8px 0px rgba(0, 0, 0, 0.253);
+    padding: 15px;
+}
+footer h3{
+    text-align: center;
+    padding: 5px;
+    color: var(--corxgo);
+
+}
+footer .rede-social{
+    display: flex;
+    justify-content: center;
+}
+footer .rede-social a{
+    margin: 10px;
+    text-align: center;
+    color: var(--corxgo);
+    text-decoration: none;
+}
+footer .rede-social a img{
+    width: 50px;
+    transition-duration: 1s;
+
+}
+footer .rede-social a img:hover{
+    transform: scale(1.1);
+}
+footer .rede-social a p:hover{
+    text-decoration: underline;
+}
